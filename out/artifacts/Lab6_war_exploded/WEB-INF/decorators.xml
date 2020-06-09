@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <decorators defaultdir="/decorators">
-<!--    <decorator name="basic-theme" page="basic-theme.jsp">-->
-<!--        <pattern>/data/*</pattern>-->
-<!--    </decorator>-->
+    <excludes>
+        <pattern>/api*</pattern>
+        <!--        <pattern>/ajax</pattern>-->
+    </excludes>
+    <decorator name="template" page="template.jsp">
+        <pattern>/*</pattern>
+    </decorator>
 </decorators>

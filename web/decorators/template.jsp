@@ -8,12 +8,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="../tags/tagslib.jsp"%>
 <html>
+
 <head>
-    <title>Title</title>
+    <title>Template</title>
+    <%@ include file="head.jsp" %>
+    <decorator:head />
 </head>
 <body>
-    <%@include file="header.jsp"%>
-    <decorator:body></decorator:body>
-    <%@include file="footer.jsp"%>
+<%@ include file="navigation.jsp"%>
+<%@ include file="header.jsp"%>
+
+<decorator:body />
+
+<%@ include file="footer.jsp"%>
+<%@ include file="js.jsp"%>
+
 </body>
+
 </html>
